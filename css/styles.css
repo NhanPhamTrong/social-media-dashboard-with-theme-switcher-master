@@ -1,0 +1,273 @@
+.hold {
+  height: 270px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  z-index: -1;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+
+h1, h2, h3, h6, p {
+  font-weight: bold;
+}
+
+.big-number {
+  margin: 0;
+}
+
+h4 {
+  margin: 45px 0 25px;
+  padding-left: 3px;
+  font-weight: bold;
+}
+
+svg {
+  margin-right: 6px;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+/* ------------------------------------------------- Heading ------------------------------------------------- */
+
+#heading {
+  margin-bottom: 45px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-check p {
+  margin-bottom: 0;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* ------------------------------------------------- Dark Light Button ------------------------------------------------- */
+
+.dark-light label {
+  height: 25px;
+  width: 48px;
+  background-image: linear-gradient(to right, #378FE6, #3EDA82);
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all .3s ease;
+}
+
+.dark-light label:before {
+  height: 19px;
+  width: 19px;
+  border-radius: 2.5em;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  transition: .3s ease;
+}
+
+.dark-light input {
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Transition */
+
+.dark-light input:checked+label:before {
+  transform: translateX(22px);
+}
+
+/* Color of check button */
+
+.dark-light label:before {
+  background: #252A41;
+}
+
+.dark-light input:checked+label:before {
+  background: #fff;
+}
+
+.dark-light input:checked+label {
+  background: #AEB3CB;
+}
+
+/* ------------------------------------------------- Follower Cards ------------------------------------------------- */
+
+.mini-hold {
+  height: 3px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.facebook {
+  background-color: #198FF5;
+}
+
+.twitter {
+  background-color: #1CA0F2;
+}
+
+.insta {
+  background-image: linear-gradient(to right, #FDC468, #DF4996);
+}
+
+.youtube {
+ background-color: #C4032A;
+}
+
+.card {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.card-body {
+  margin: 10px 15px;
+  padding: 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Up And Down */
+
+.up-and-down {
+  margin: 0 0 25px;
+}
+
+.up-and-down.up {
+  color: #1EB589;
+}
+
+.up-and-down.down {
+  color: #DC414C;
+}
+
+/* Followers card */
+
+#follower-card {
+  padding: 0 30px;
+}
+
+#follower-card .row .card .card-body .name {
+  margin: 27px 0 25px;
+  font-weight: bold;
+}
+
+#follower-card .row .card .card-body .follower {
+  margin-bottom: 30px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+/* ------------------------------------------------- Overview ------------------------------------------------- */
+
+#overview {
+  padding: 0 30px;
+}
+
+.overview-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.interact {
+  padding: 25px 30px 10px;
+}
+
+.interact p {
+  padding-top: 3px;
+}
+
+.number-and-rate {
+  padding: 0 35px 0 30px;
+  align-items: baseline;
+}
+
+/* Attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3E52A3;
+}
+
+/* ------------------------------------------------- Dark Mode ------------------------------------------------- */
+
+.hold-dark {
+  background: #1F212E;
+}
+
+/* Body */
+
+.dark-mode {
+  background-color: #1E202A;
+  color: #fff;
+}
+
+.dark {
+  color: #8B97C6;
+}
+
+.card-body-dark {
+  background-color: #252A41;
+}
+
+/* ------------------------------------------------- Light Mode ------------------------------------------------- */
+
+.hold-light {
+  background: #F5F7FF;
+}
+
+/* Body */
+
+.light-mode {
+  background-color: #fff;
+  color: #1E202A;
+}
+
+.light {
+  color: #63687E;
+}
+
+.card-body-light {
+  background-color: #F0F2FA;
+}
+
+/* ------------------------------------------------- Phone Width ------------------------------------------------- */
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  #heading {
+    flex-direction: column;
+  }
+
+  .button-check {
+    justify-content: space-between;
+  }
+}
