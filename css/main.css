@@ -1,0 +1,287 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+nav, main {
+  padding: 3.5vh 11vw 0;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+h4 {
+  margin-top: 4vh;
+}
+
+h6 {
+  margin-bottom: 4vh;
+}
+
+.card, .item {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h6, .name, .change {
+  font-weight: 700;
+}
+
+p {
+  font-size: 12px;
+}
+
+.title p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+body.dark {
+  background: #1e202a;
+}
+
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark nav {
+  color: white;
+}
+
+body.dark h1 p, body.dark h1 label, body.dark h2 p, body.dark h2 label, body.dark h3 p, body.dark h3 label, body.dark h4 p, body.dark h4 label, body.dark nav p, body.dark nav label {
+  color: #8b97c6;
+}
+
+body.dark #top-background {
+  background: #1f212e;
+}
+
+body.dark .card, body.dark .item {
+  background-color: #252a41;
+  color: #8b97c6;
+}
+
+body.dark .card:hover, body.dark .item:hover {
+  background-color: #333a56;
+}
+
+body.dark #overview-today {
+  color: #8b97c6;
+}
+
+body.light {
+  background: white;
+}
+
+body.light h1, body.light h2, body.light h3, body.light nav {
+  color: #1e202a;
+}
+
+body.light h1 p, body.light h1 label, body.light h2 p, body.light h2 label, body.light h3 p, body.light h3 label, body.light nav p, body.light nav label {
+  color: #63687e;
+}
+
+body.light h4, body.light h6 {
+  color: #63687e;
+}
+
+body.light #top-background {
+  background: #f5f7ff;
+}
+
+body.light .card, body.light .item {
+  background-color: #f0f2fa;
+  color: #63687e;
+}
+
+body.light .card:hover, body.light .item:hover {
+  background-color: #e1e3f0;
+}
+
+.switch input {
+  background: #aeb3cb;
+}
+
+.switch input:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#378fe6), to(#3eda82));
+  background-image: linear-gradient(to left, #378fe6, #3eda82);
+}
+
+.switch input:before {
+  background: #f5f7ff;
+}
+
+.switch input:checked {
+  background-image: -webkit-gradient(linear, right top, left top, from(#378fe6), to(#3eda82));
+  background-image: linear-gradient(to left, #378fe6, #3eda82);
+}
+
+.switch input:checked:before {
+  background: #1f212e;
+}
+
+.facebook:before {
+  background: #198ff5;
+}
+
+.twitter:before {
+  background: #1ca0f2;
+}
+
+.instagram:before {
+  background-image: -webkit-gradient(linear, right top, left top, from(#df4996), to(#fdc468));
+  background-image: linear-gradient(right, #df4996, #fdc468);
+}
+
+.youtube:before {
+  background: #c4032a;
+}
+
+.increase {
+  color: #1db489;
+}
+
+.decrease {
+  color: #dc414c;
+}
+
+#top-background {
+  height: 13rem;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  z-index: -10;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+nav p, nav label {
+  font-weight: 700;
+}
+
+label {
+  margin-right: 55px;
+}
+
+.switch-section {
+  position: relative;
+}
+
+.switch-section .switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.switch-section .switch input {
+  -webkit-appearance: none;
+  margin-left: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  height: 25px;
+  width: 45px;
+}
+
+.switch-section .switch input:before {
+  width: 42%;
+  height: 76%;
+  border-radius: 30px;
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(0, 15%);
+          transform: translate(0, 15%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.switch-section .switch input:checked:before {
+  left: 7%;
+}
+
+@media only screen and (max-width: 375px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav hr {
+    width: 100%;
+  }
+  .switch-section {
+    width: 100%;
+  }
+}
+
+.card {
+  border: none;
+  text-align: center;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+.card .name, .card .change {
+  margin: 12px 0;
+}
+
+.card .unit {
+  letter-spacing: .25em;
+}
+
+.card:before {
+  height: 4px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+h6 {
+  background-position: right 0px;
+  background-repeat: no-repeat;
+}
+
+#overview-today .facebook {
+  background-image: url("https://www.linkpicture.com/q/icon-facebook.svg");
+}
+
+#overview-today .twitter {
+  background-image: url("https://www.linkpicture.com/q/icon-twitter.svg");
+}
+
+#overview-today .instagram {
+  background-image: url("https://www.linkpicture.com/q/icon-instagram.svg");
+}
+
+#overview-today .youtube {
+  background-image: url("https://www.linkpicture.com/q/icon-youtube.svg");
+}
+
+.today-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+/*# sourceMappingURL=main.css.map */
