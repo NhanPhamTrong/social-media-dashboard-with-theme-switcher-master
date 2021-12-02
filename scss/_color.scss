@@ -1,0 +1,103 @@
+body.dark {
+    background: $dark-background;
+
+    h1, h2, h3, h4, nav {
+        color: $dark-word-2;
+
+        p, label {
+            color: $dark-word-1;
+        }
+    }
+
+    #top-background {
+        background: $dark-top-background;
+    }
+
+    .card, .item {
+        background-color: $dark-card-background;
+        color: $dark-word-1;
+    }
+
+    .card:hover, .item:hover {
+        background-color: $dark-card-background-hover;
+    }
+
+    #overview-today {
+        color: $dark-word-1;
+    }
+}
+
+body.light {
+    background: $light-background;
+
+    h1, h2, h3, nav {
+        color: $light-word-2;
+
+        p, label {
+            color: $light-word-1;
+        }
+    }
+
+    h4, h6 {
+        color: $light-word-1;
+    }
+
+    #top-background {
+        background: $light-top-background;
+    }
+
+    .card, .item {
+        background-color: $light-card-background;
+        color: $light-word-1;
+    }
+
+    .card:hover, .item:hover {
+        background-color: $light-card-background-hover;
+    }
+}
+
+.switch {
+    button {
+        background: $light-switch-background;
+    }
+
+    button:hover {
+        background-image: $dark-switch-background;
+    }
+
+    button:before {
+        background: $light-top-background;
+    }
+
+    button.active {
+        background-image: $dark-switch-background;
+    }
+
+    button.active:before {
+        background: $dark-top-background;
+    }
+}
+
+.facebook:before {
+    background: $facebook-color;
+}
+
+.twitter:before {
+    background: $twitter-color;
+}
+
+.instagram:before {
+    background-image: $instagram-color;
+}
+
+.youtube:before {
+    background: $youtube-color;
+}
+
+.increase {
+    color: $increase-color;
+}
+
+.decrease {
+    color: $decrease-color;
+}
