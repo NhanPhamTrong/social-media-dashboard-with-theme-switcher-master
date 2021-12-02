@@ -1,0 +1,54 @@
+.card {
+    border: none;
+    text-align: center;
+
+    p {
+        font-size: $size-1;
+    }
+
+    .name, .change {
+        margin: 12px 0;
+    }
+
+    .unit {
+        letter-spacing: .25em;
+    }
+}
+
+.card:before {
+    height: 4px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    content: "";
+    position: absolute;
+    top: 0;
+}
+
+h6 {
+    background-position: right 0px;
+    background-repeat: no-repeat;
+}
+
+#overview-today {
+    .facebook {
+        background-image: url("https://www.linkpicture.com/q/icon-facebook.svg");
+    }
+
+    .twitter {
+        background-image: url("https://www.linkpicture.com/q/icon-twitter.svg");
+    }
+
+    .instagram {
+        background-image: url("https://www.linkpicture.com/q/icon-instagram.svg");
+    }
+
+    .youtube {
+        background-image: url("https://www.linkpicture.com/q/icon-youtube.svg");
+    }
+}
+
+.today-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
